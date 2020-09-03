@@ -38,7 +38,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 23);
+            this.label1.Location = new System.Drawing.Point(58, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 12);
             this.label1.TabIndex = 0;
@@ -53,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(296, 174);
+            this.label2.Location = new System.Drawing.Point(442, 240);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 12);
             this.label2.TabIndex = 1;
@@ -63,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(168, 308);
+            this.label3.Location = new System.Drawing.Point(178, 196);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 12);
             this.label3.TabIndex = 2;
