@@ -14,6 +14,8 @@ namespace v0903
     {
         int vx = rand.Next (-20,20);
         int vy = rand.Next (-20,20);
+        int a = Math.Abs(-10);
+
         static Random rand = new Random();
 
 
@@ -34,25 +36,29 @@ namespace v0903
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            label1.Left = vx;
-            label1.Top = vy;
+            label1.Left += vx;
+            label1.Top += vy;
+            Point mp = MousePosition;
+            mp = PointToClient(mp);
+
 
             if (label1.Left < 0)
             {
-                vx = Math.Abs(vx) * 11 / 10;
+                vx = Math.Abs(vx);
             }
             if (label1.Top < 0)
             {
-                vy = Math.Abs(vy) * 11 / 10;
+                vy = Math.Abs(vy) ;
             }
             if (label1.Right >= ClientSize.Width)
             {
-                vx = -Math.Abs(vx) * 11 / 10;
+                vx = -Math.Abs(vx) ;
             }
             if (label1.Top >= ClientSize.Height)
             {
-                vy = -Math.Abs(vy) * 11 / 10;
+                vy = -Math.Abs(vy) ;
             }
+            if ((mp.X >= label1.Left) && (mp.X < label1.Right) && (mp.Y >= label1.Top) && (mp.Y < label1.Bottom))
             {
                 timer1.Enabled = false;
             }
